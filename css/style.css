@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-size: 18px;
+  font-family: "MuseoLight", "Arial", sans-serif;
+  background-color: #fff;
+}
+.banner {
+  background-image: url("../img/Banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+}
+.header__content {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.header__content .logo ul li {
+  font-family: "MuseoVeryBold", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #707aff;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(21deg, #707aff, #e077ff);
+  background: -o-linear-gradient(21deg, #707aff, #e077ff);
+  background: linear-gradient(21deg, #707aff, #e077ff);
+  -webkit-background-clip: text;
+}
+.header__content nav {
+  padding-right: 65px;
+}
+.header__content nav ul {
+  display: flex;
+}
+.header__content nav ul li {
+  margin-right: 75px;
+}
+.header__content nav ul li:last-child {
+  margin-right: 0;
+}
+.header__content nav ul li a {
+  color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid transparent;
+  font-family: "MuseoRegular", "Arial", sans-serif;
+}
+.header__content nav ul li a:hover {
+  border-bottom: 1px solid white;
+}
+.g-btn {
+  display: block;
+  width: 300px;
+  color: white;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 48px;
+  background: -webkit-linear-gradient(21deg, #707aff, #e077ff);
+  background: -o-linear-gradient(21deg, #707aff, #e077ff);
+  background: linear-gradient(21deg, #707aff, #e077ff);
+  box-shadow: 0px 4px 18px -3px rgba(1, 1, 1, 0.5);
+  font-family: "MuseoRegular", "Arial", sans-serif;
+}
+.g-btn:active {
+  box-shadow: none;
+}
+.banner__content {
+  padding-top: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner__content h1 {
+  font-size: 48px;
+  font-family: "MuseoBold", "Arial", sans-serif;
+  color: white;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.request {
+  width: 380px;
+  height: 290px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 40px;
+  font-family: "MuseoRegular", "Arial", sans-serif;
+  margin-bottom: 160px;
+}
+.request form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.request form input {
+  background-color: #fff;
+  color: #999999;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  border: none;
+  line-height: 48px;
+  padding: 0 30px;
+}
+.request .succsess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.request .succsess img {
+  margin-bottom: 25px;
+}
+.request .succsess span {
+  font-family: "MuseoRegular", "Arial", sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+.service__content {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.service__advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 95px;
+}
+.service__advantages .robot {
+  margin-left: 110px;
+  position: relative;
+  max-width: 380px;
+  min-width: 31.5%;
+  min-height: 310px;
+  background: -webkit-linear-gradient(21deg, #707aff, #e077ff);
+  background: -o-linear-gradient(21deg, #707aff, #e077ff);
+  background: linear-gradient(21deg, #707aff, #e077ff);
+  z-index: 110;
+}
+.service__advantages .robot:after {
+  content: "";
+  width: 89.47%;
+  height: 87.09%;
+  background-color: #fff;
+  position: absolute;
+  top: center;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+}
+.service__advantages .robot img {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.service__advantages .description {
+  max-width: 48%;
+}
+.service__advantages .description span {
+  color: #333;
+  font-size: 24px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.service__advantages .description span p {
+  display: block;
+}
+.items__content span {
+  text-align: center;
+  display: block;
+}
+.items__content .items {
+  margin: 0 auto;
+  margin-top: 65px;
+}
+.items__content .items .item {
+  width: 19%;
+  position: relative;
+}
+.items__content .items .item:last-child::after {
+  display: none;
+}
+.items__content .items .item:after {
+  content: "";
+  width: 50px;
+  height: 10px;
+  background-image: url("../img/arrow_right.png");
+  position: absolute;
+  right: -30px;
+  top: 35px;
+}
+.items__content .items .item span {
+  text-align: center;
+  display: block;
+  padding-top: 150px;
+}
+.items__content .items .seo {
+  background-image: url("../img/seo_icon.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.items__content .items .shop {
+  background-image: url("../img/shop_icon.png");
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+.items__content .items .phone {
+  background-image: url("../img/phone_icon.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.items__content .items .delivery {
+  background-image: url("../img/delivery_icon.png");
+  background-repeat: no-repeat;
+  background-position: center 15px;
+}
+.items__content .items .cash {
+  background-image: url("../img/cash_icon.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+h2 {
+  font-family: "MuseoBold", "Arial", sans-serif;
+  color: #333;
+  font-size: 32px;
+  padding-bottom: 80px;
+  text-align: center;
+  position: relative;
+  line-height: 40px;
+}
+h2:after {
+  content: "";
+  width: 80px;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(21deg, #707aff, #e077ff);
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+h3 {
+  font-family: "MuseoBold", "Arial", sans-serif;
+  color: #333;
+  font-size: 24px;
+  padding-bottom: 55px;
+  text-align: center;
+  position: relative;
+}
+h3:after {
+  content: "";
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #4a90e2;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.packages {
+  background-color: #f6fafb;
+  padding: 60px 0;
+}
+.packages__wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.packages__wrapper .package {
+  width: 33%;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.packages__wrapper .package:last-child {
+  margin-right: 0;
+}
+.packages__wrapper .package ul {
+  padding: 0px 25px 0 25px;
+  height: 100%;
+  margin-bottom: 35px;
+}
+.packages__wrapper .package ul li {
+  padding-left: 20px;
+  line-height: 35px;
+  position: relative;
+}
+.packages__wrapper .package ul li:nth-child(4) {
+  margin-bottom: 40px;
+}
+.packages__wrapper .package ul li:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #86abc4;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+.packages__wrapper .package ul li span {
+  color: #999;
+  font-size: 14px;
+  margin: 0;
+  line-height: 20px;
+  display: block;
+  font-family: "MuseoRegular", "Arial", sans-serif;
+}
+.package__bottom {
+  border-top: 1px solid rgba(153, 153, 153, 0.2);
+  padding: 25px 0;
+}
+.package__bottom span {
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-family: "MuseoBold", "Arial", sans-serif;
+  margin-bottom: 12px;
+}
+.package__bottom a {
+  margin: 0 auto;
+}
+.advantages {
+  background-image: url("../img/advantages-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-top: 67px;
+  padding-bottom: 60px;
+}
+.advantages h2 {
+  line-height: 32px;
+}
+.advantages__content {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 75px 100px 65px 80px;
+}
+.advantages__content ul li {
+  padding-left: 20px;
+  line-height: 35px;
+  position: relative;
+  margin-bottom: 11px;
+}
+.advantages__content ul li:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #86abc4;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+.h2-white h2 {
+  color: white;
+  padding: 0;
+}
+.h2-white h2::after {
+  display: none;
+}
+.join {
+  background-color: #717aff;
+}
+.join__content {
+  padding-top: 44px;
+  padding-bottom: 80px;
+}
+.join__content h2 {
+  margin-bottom: 50px;
+}
+.join__content form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join__content form input {
+  background-color: #fff;
+  color: #999999;
+  height: 50px;
+  width: 25%;
+  border-radius: 25px;
+  border: none;
+  line-height: 48px;
+  padding: 0 30px;
+  margin-right: 15px;
+}
+.join__content form .g-btn {
+  background: none;
+  background-color: #463d73;
+}
+.map {
+  background-color: #463d73;
+}
+.map .h2-white {
+  margin-bottom: 80px;
+}
+.map .h2-white h2::after {
+  background: none;
+  background-color: #fff;
+}
+.map .request {
+  margin-bottom: 0;
+  margin-right: 100px;
+  background-color: #fff;
+  height: auto;
+  z-index: 10;
+}
+.map .request input {
+  border: 1px solid #333;
+}
+.map .request h3 {
+  margin-bottom: 40px;
+  padding-bottom: 0;
+  line-height: 40px;
+}
+.map .request h3::after {
+  display: none;
+}
+.map .succsess span {
+  color: #333;
+}
+.request__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.map__contnent {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 110px;
+  position: relative;
+  overflow: hidden;
+}
+.map__contnent .man {
+  position: absolute;
+  left: 120px;
+  bottom: -215px;
+}
+footer {
+  background-color: #333333;
+}
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 28px 0;
+}
+footer .wrapper .footer__confidence a {
+  font-family: "MuseoRegular", "Arial", sans-serif;
+  color: #666666;
+  border-bottom: 1px solid #666;
+  font-size: 16px;
+  margin-right: 20px;
+}
+footer .wrapper .footer__tel span {
+  font-size: 20px;
+  font-family: "MuseoRegular", "Arial", sans-serif;
+  color: #fff;
+}

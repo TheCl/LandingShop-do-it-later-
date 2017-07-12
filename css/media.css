@@ -1,0 +1,164 @@
+@media only screen and (max-width : 1200px) {
+
+	..packages__wrapper{
+		position: relative;
+	}
+ 	
+ 	.packages__wrapper::after{
+ 		content:"";
+ 		width: 60px;
+ 		height: 60px;
+ 		background-image: url("../img/prev_slider.png");
+ 		background-repeat: no-repeat;
+ 		position: absolute;
+ 		left:0;
+ 		top:50px;
+ 	}
+
+ 	.packages__wrapper::before{
+ 		content:"";
+ 		width: 60px;
+ 		height: 60px;
+ 		background-image: url("../img/next_slider.png");
+ 		background-repeat: no-repeat;
+ 		position: absolute;
+ 		right:0;
+ 		top:50px;
+ 		z-index:100;
+ 	}
+
+ 	.header__content nav {
+    padding-right: 10px;
+	}
+	
+	.header__content nav ul li{
+		margin-right: 30px;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+
+	.banner__content h1{
+		font-size: 40px;
+	}
+
+	.man{
+		display: none;
+	}
+
+	.request__wrap{
+		display: block;
+	}
+
+	.request__wrap .request{
+		margin: 0 auto;
+	}
+
+	.join__content form {
+    display: block;
+	}
+
+	.join__content form input, .join__content form a {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 280px;
+	}
+
+	.service__advantages{
+		// display: block;
+	}
+
+	.service__advantages .robot{
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		order:3;
+	}
+
+	.service__advantages .description{
+		max-width:100%;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 80px;
+		padding: 0 20px;
+		order:2;
+	}
+
+	.description span p{
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width : 900px) {
+
+	.header__content nav {
+    	display: none;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+		.advantages__content {
+	    background-color: #fff;
+	    border-radius: 25px;
+	    padding: 25px 40px 20px 30px;
+	}
+}
+
+@media only screen and (max-width : 640px) {
+
+	.banner__content h1{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+
+	.banner__content h1{
+		font-size: 24px;
+	}
+
+	.footer__confidence{
+		width: 100%;
+	}
+
+	.footer__confidence span{
+		text-align: center;
+		display: block;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	.footer__tel{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.request{
+		width: 95%;
+		padding:30px 15px;
+		margin-bottom: 60px;
+	}
+
+	.request a{
+		width: 100%;
+	}
+
+	.banner__content{
+		padding-top: 50px;
+	}
+
+	.service__content{
+		padding-top: 50px;
+	}
+
+	.items__content .items .item:after{
+
+		right: 20px;
+	}
+
+	.items__content .items .item span{
+		padding-top: 100px;
+	}
+}

@@ -82,6 +82,7 @@
 		display: none;
     	width: 100%;
     	position: absolute;
+    	left: 0;
     	top: 120px;
     	min-height:100px;
     	background-color:rgba(70,61,115,0.9);

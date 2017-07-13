@@ -71,6 +71,18 @@ body{
 
 	nav{
 		padding-right: 65px;
+		transition:2s all easy;
+
+	        &:before{
+    	content:"";
+    	position: absolute;
+    	border:20px solid transparent;
+    	border-bottom: 20px solid rgba(70,61,115,0.9);
+    	width: 20px;
+    	height: 20px;
+    	top: -40px;
+    	right: 15px;
+        }
 
 		ul{
 			display: flex;
@@ -93,6 +105,53 @@ body{
 					}
 				}
 			}
+		}
+	}
+
+	.mobile__nav{
+		height: 22px;
+		width: 30px;
+		display: flex;
+		justify-content:space-between;
+		flex-direction:column;
+		z-index:10;
+		margin-right: 20px;
+		cursor: pointer;
+		position: relative;
+		transition:2s all easy;
+		display: none;
+
+
+		.stick{
+			height: 2px;
+			width: 30px;
+			background-color: #fff;
+			transition:2s all easy;
+		}
+	}
+
+	 .open{
+
+	 	transition:2s all;
+		
+		.stick{
+			position: absolute;
+			top: 50%;
+			transform:translateY(-50%);
+			transition:2s all;
+		}
+		
+		.stick-middle{
+			opacity:0;
+			transition:0.1s all;
+		}
+		
+		.stick-top{
+			transform:rotate(45deg);
+		}
+
+		.stick-bottom{
+			transform:rotate(-45deg);
 		}
 	}
 }
@@ -381,25 +440,39 @@ h3{
 .packages{
 	background-color: #f6fafb;
 	padding: 60px 0;
+
+	.prev{
+		display: none;
+	}
+
+	.next{
+		display: none;
+	}
 }
 
 .packages__wrapper{
 	overflow: hidden;
 	margin: 0 auto;
 
-	.package{
+	.slide{
+		height: 770px;
+		margin-right: 1%;
 		width: 33%;
-		margin-right: 20px;
+
+		&:last-child{
+			margin-right:0;
+		}
+	}
+
+	.package{
 		background-color: #fff;
 		border-radius:25px;
 		padding-top: 40px;
 		display: flex;
 		justify-content:space-between;
 		flex-direction:column;
+		height: 100%;
 
-		&:last-child{
-			margin-right:0;
-		}
 
 		ul{
 			padding:0px 25px 0 25px;	
@@ -553,6 +626,57 @@ h3{
 	}
 }
 
+.comment{
+	background-color: #f6fafb;
+}
+
+.comment__content{
+	padding-top: 50px;
+	padding-bottom: 40px;
+	overflow:hidden;
+	max-height: 850px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.video {
+position: relative;
+padding-top: 56.25%;
+height: 0;
+overflow: hidden;
+z-index:-1;
+}
+
+// .slick-initialized .slick-slide{
+// 	max-height:500px;
+// 	overflow:hidden;
+// }
+
+.video iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+margin:0 auto;
+display: block;
+height: 100%;
+max-height:540px;	
+}
+
+.prev, .next{
+	position: absolute;
+	z-index:100;
+	top:50%;
+	cursor:pointer;
+}
+.wrapper .prev{
+		left:-10px;
+}
+
+.wrapper .next{
+		right:-10px;
+}
+
 .map{
 	background-color: #463d73;
 
@@ -617,6 +741,11 @@ h3{
 	padding-bottom: 110px;
 	position: relative;
 	overflow: hidden;
+
+	.succsess{
+		height: 380px;
+		padding: 0;
+	}
 
 	.man{
 		position: absolute;

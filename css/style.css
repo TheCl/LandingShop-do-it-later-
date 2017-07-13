@@ -50,6 +50,17 @@ body {
 }
 .header__content nav {
   padding-right: 65px;
+  transition: 2s all easy;
+}
+.header__content nav:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-bottom: 20px solid rgba(70, 61, 115, 0.9);
+  width: 20px;
+  height: 20px;
+  top: -40px;
+  right: 15px;
 }
 .header__content nav ul {
   display: flex;
@@ -68,6 +79,44 @@ body {
 }
 .header__content nav ul li a:hover {
   border-bottom: 1px solid white;
+}
+.header__content .mobile__nav {
+  height: 22px;
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 10;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: 2s all easy;
+  display: none;
+}
+.header__content .mobile__nav .stick {
+  height: 2px;
+  width: 30px;
+  background-color: #fff;
+  transition: 2s all easy;
+}
+.header__content .open {
+  transition: 2s all;
+}
+.header__content .open .stick {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 2s all;
+}
+.header__content .open .stick-middle {
+  opacity: 0;
+  transition: 0.1s all;
+}
+.header__content .open .stick-top {
+  transform: rotate(45deg);
+}
+.header__content .open .stick-bottom {
+  transform: rotate(-45deg);
 }
 .g-btn {
   display: block;
@@ -295,22 +344,32 @@ h3:after {
   background-color: #f6fafb;
   padding: 60px 0;
 }
+.packages .prev {
+  display: none;
+}
+.packages .next {
+  display: none;
+}
 .packages__wrapper {
   overflow: hidden;
   margin: 0 auto;
 }
-.packages__wrapper .package {
+.packages__wrapper .slide {
+  height: 770px;
+  margin-right: 1%;
   width: 33%;
-  margin-right: 20px;
+}
+.packages__wrapper .slide:last-child {
+  margin-right: 0;
+}
+.packages__wrapper .package {
   background-color: #fff;
   border-radius: 25px;
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-.packages__wrapper .package:last-child {
-  margin-right: 0;
+  height: 100%;
 }
 .packages__wrapper .package ul {
   padding: 0px 25px 0 25px;
@@ -427,6 +486,47 @@ h3:after {
   background: none;
   background-color: #463d73;
 }
+.comment {
+  background-color: #f6fafb;
+}
+.comment__content {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  max-height: 850px;
+  margin: 0 auto;
+  width: 90%;
+}
+.video {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  max-height: 540px;
+}
+.prev,
+.next {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  cursor: pointer;
+}
+.wrapper .prev {
+  left: -10px;
+}
+.wrapper .next {
+  right: -10px;
+}
 .map {
   background-color: #463d73;
 }
@@ -472,6 +572,10 @@ h3:after {
   padding-bottom: 110px;
   position: relative;
   overflow: hidden;
+}
+.map__contnent .succsess {
+  height: 380px;
+  padding: 0;
 }
 .map__contnent .man {
   position: absolute;

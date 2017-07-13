@@ -28,13 +28,19 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href="">Чем вы будете заниматься</a></li>
-						<li><a href="">Преимущества работы с нами</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href="#items" class="scroll">Чем вы будете заниматься</a></li>
+						<li><a href="#advantages" class="scroll">Преимущества работы с нами</a></li>
+						<li><a href="#tel" class="scroll">Контакты</a></li>
 					</ul>
 				</nav>
+				<div class="mobile__nav">
+					<div class="stick stick-top"></div>
+					<div class="stick stick-middle"></div>
+					<div class="stick stick-bottom"></div>
+				</div>
 			</div>
 		</header>
+
 		<div class="banner__wrapper">
 			<div class="banner__content">
 				<h1>Стань нашим партнером <br>
@@ -43,7 +49,7 @@
 					<form action="" class="hide-me">
 						<input type="text" placeholder="Имя" name="name">
 						<input type="text" placeholder="Телефон" name="tel">
-						<a href="#" class="g-btn btn-hide">Отправить заявку</a>
+						<a href="javascript:void(0);" class="g-btn btn-hide">Отправить заявку</a>
 					</form>
 
 					<div class="succsess">
@@ -75,7 +81,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="items__content">
+			<div class="items__content" id="items">
 				<h2>Чем Вы будете заниматься</h2>
 				<span>Вы будете продавать популярные товары через собственный интернет-магазин:</span>
 
@@ -114,57 +120,66 @@
 	<div class="wrapper">
 		<div class="packages__content">
 			<h2>Наши пакеты</h2>
+
+		<div class="prev GOD"><img src="img/prev_slider.png" alt=""></div>
+		<div class="next PLS"><img src="img/next_slider.png" alt=""></div>
+
 			<div class="packages__wrapper slick_2">
-				<div class="package">
-					<h3>Старт</h3>
-					<ul>
-						<li>Настройка и подключение <br>
-						cайт landing page</li>
-						<li>Обучение</li>
-						<li>Первая партия товара на <b>20 000 р.</b></li>
-						<li>
-							Подключение 1 канала рекламы
-							<span>Яндекс-Директ</span>
-						</li>
-					</ul>
-					<div class="package__bottom">
-						<span>50 000 руб.</span>
-						<a href="#join" class="g-btn scroll">Отправить заявку</a>
+				<div class="slide">
+					<div class="package">
+						<h3>Старт</h3>
+						<ul>
+							<li>Настройка и подключение <br>
+							cайт landing page</li>
+							<li>Обучение</li>
+							<li>Первая партия товара на <b>20 000 р.</b></li>
+							<li>
+								Подключение 1 канала рекламы
+								<span>Яндекс-Директ</span>
+							</li>
+						</ul>
+						<div class="package__bottom">
+							<span>50 000 руб.</span>
+							<a href="#join" class="g-btn scroll">Отправить заявку</a>
+						</div>
 					</div>
 				</div>
-				<div class="package">
-					<h3>Стандарт</h3>
-					<ul>
-						<li>
-							Настройка и подключение <br> cайт landing page
-						</li>
+				<div class="slide">
+					<div class="package">
+						<h3>Стандарт</h3>
+						<ul>
+							<li>
+								Настройка и подключение <br> cайт landing page
+							</li>
 
-						<li>
-							Обучение
-						</li>
+							<li>
+								Обучение
+							</li>
 
-						<li>
-							Первая партия товара на <b>25 000 р.</b>
-						</li>
+							<li>
+								Первая партия товара на <b>25 000 р.</b>
+							</li>
 
-						<li>
-							Подключение 2 каналов рекламы
-							<span>Яндекс-Директ и Google Adwords</span>
-						</li>
+							<li>
+								Подключение 2 каналов рекламы
+								<span>Яндекс-Директ и Google Adwords</span>
+							</li>
 
-						<li>
-							Подключение новых трендовых товаров <b>со скидкой 30%</b>
-						</li>
+							<li>
+								Подключение новых трендовых товаров <b>со скидкой 30%</b>
+							</li>
 
-						<li>
-							Аккаунт-поддержка от нашего маркетингового агенства на первый месяц
-						</li>
-					</ul>
-					<div class="package__bottom">
-						<span>75 000 руб.</span>
-						<a href="#join" class="g-btn scroll">Отправить заявку</a>
+							<li>
+								Аккаунт-поддержка от нашего маркетингового агенства на первый месяц
+							</li>
+						</ul>
+						<div class="package__bottom">
+							<span>75 000 руб.</span>
+							<a href="#join" class="g-btn scroll">Отправить заявку</a>
+						</div>
 					</div>
 				</div>
+				<div class="slide">
 				<div class="package">
 					<h3>Премиум</h3>
 					<ul>
@@ -198,12 +213,13 @@
 						<a href="#join" class="g-btn scroll">Отправить заявку</a>
 					</div>
 				</div>
-			</div>
+			  </div>
+		   </div>
 		</div>
 	</div>
 </section>
 
-<section class="advantages">
+<section class="advantages" id="advantages">
 	<div class="wrapper">
 		<h2>Почему с нами выгодно сотрудничать?</h2>
 		<div class="advantages__content">
@@ -248,6 +264,29 @@
 	</div>
 </section>
 
+
+<section class="comment">
+	<div class="wrapper">
+
+	  	<div class="prev"><img src="img/prev_slider.png" alt=""></div>
+		<div class="next"><img src="img/next_slider.png" alt=""></div>
+
+		<div class="comment__content">
+			<h2>Отзывы наших клиентов</h2>
+			<div class="video__slider slick_3">
+				<div class="video">
+					<iframe src=http://www.youtube.com/embed/DkaUsBwe0fo border="0" allowfullscreen></iframe>
+				</div>
+				<div class="video">
+					 <iframe src=https://www.youtube.com/embed/f6FsfN4yCM8 border="0" allowfullscreen></iframe>
+				</div>
+				<div class="video">
+					 <iframe src=http://www.youtube.com/embed/1yYssGs2hZg border="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <section class="map">
 	<div class="wrapper">
 		<div class="map__contnent">
@@ -266,7 +305,7 @@
 						<h3>Проверьте, <br>свободен ли Ваш город?</h3>
 						<input type="text" placeholder="Имя" name="name">
 						<input type="text" placeholder="Телефон" name="tel">
-						<a href="#" class="g-btn btn-hide">Отправить заявку</a>
+						<a href="javascript:void(0);" class="g-btn btn-hide">Отправить заявку</a>
 					</form>
 
 					<div class="succsess">
@@ -305,7 +344,7 @@
 				<a href="">Политика конфиденциальности</a>
 			</span>
 		</div>
-		<div class="footer__tel">
+		<div class="footer__tel" id="tel">
 			<span>+7 (495) 123-45-67</span>
 		</div>
 	</div>
